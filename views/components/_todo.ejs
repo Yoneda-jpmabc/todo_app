@@ -1,0 +1,32 @@
+<div id="todo-list" class="col s12">
+    <div class="title teal lighten-1">
+        <h2 class="white-text">Todo List</h4>
+        <i class="material-icons white-text medium">assignment</i>
+    </div>
+    
+    <div class="list-wrapper">
+    <ul class="list collection">
+        <% items.forEach((item) => { %>
+        <li class="collection-item">
+            <label>
+                <input type="checkbox" id="done">
+                <span class="task-name"><%= item.name%></span>
+            </label>
+            <form action="/delete/<%= item.id%>" method="POST">
+                <button type="submit" class="btn waves-effect waves-light"><i class="material-icons">delete</i></button>
+            </form>
+        </li>
+        <% } );%>
+    </ul>
+    </div>
+
+    <div class="add-task-wrapper ">
+        <form action="/add" method="POST">
+            <label class="add-task">
+                    <input required type="text" name="task" placeholder="何をしますか？" autocomplete="off">
+                    <button type="submit" class="btn waves-effect waves-light"><i class="material-icons">add</i></button>
+            </label>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,76 @@
+/*common style*/
+
+.hidden {
+    display: none;
+}
+
+/*↓↓↓↓TDL↓↓↓↓*/
+#todo-list {
+    margin-top: 20px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    width: 100%;
+}
+.title h2 {
+    margin: 0 20px;
+}
+.list-wrapper {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 60%;
+}
+.collection {
+    height: 300px;
+    overflow: scroll !important;
+}
+.collection-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em !important;
+    border: 1px solid #80cbc4 !important;
+    margin-bottom: 20px !important
+}
+.collection form {
+    position: absolute;
+    right: 10px;
+}
+.collection::before {
+    margin-right: 5px;
+    border-left: 2px solid  #80cbc4 !important;
+}
+.add-task-wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+.add-task {
+    display: flex;
+}
+.add-task input {
+    text-align: center;
+}
+
+
+
+/*↓↓↓↓HAB↓↓↓↓*/
+
+.record-wrapper {
+    margin: 30px;
+}
+.record-inner {
+    width: 100%;
+}
+table {
+    width: 90%;
+    margin: 0 auto;
+}
+.day-chart {
+    width: 30%;
+}
+
+
